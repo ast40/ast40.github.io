@@ -1,0 +1,192 @@
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Saikoneta</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            color: white;
+            font-family: 'ABeeZee', sans-serif;
+        }
+
+    header {
+        text-align: center;
+        padding: 80px 0;
+    }
+
+    nav {
+        background-color: rebeccapurple;
+        color: white;
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+    }
+
+    nav img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 15px;
+    }
+
+    h2 {
+        color: rebeccapurple;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    table.default {
+        width: 100%;
+        margin: 5 auto;
+        border-collapse: collapse;
+    }
+
+    table.default tr {
+        border: 7px solid rebeccapurple;
+    }
+
+    table.default td {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 370px;
+        border-right: 7px solid rebeccapurple;
+        border-bottom: 7px solid rebeccapurple;
+    }
+
+    table.default td:last-child {
+        border-right: none;
+    }
+
+    table.default tr:last-child td {
+        border-bottom: none;
+    }
+
+    iframe {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .yt-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s;
+    }
+
+
+    .video-container iframe:focus + .yt-popup,
+    .video-container iframe:active + .yt-popup {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* Estilo del mensaje emergente */
+    .yt-popup .popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .yt-popup .popup-content h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .yt-popup .popup-content p {
+        margin: 0;
+    }
+
+    .yt-popup .popup-content a {
+        display: block;
+        margin-top: 10px;
+        background-color: rebeccapurple;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+</style>
+</head>
+
+<body>
+
+    <nav>
+    <img src="imagenes/SAIKO.png" class="header-image" alt="Logo" width="150">
+    <div>
+        <a href="file:///D:/saiko/Quienes.html" class="header-text" alt="Cuenta">¿Quien es?</a>
+        <a href="file:///D:/saiko/REDES.html" class="header-text" alt="Cuenta">Redes sociales</a>
+        <a href="file:///D:/saiko/cesta.html" class="header-text" alt="Cesta">
+            <img src="imagenes/shopping-bag.png" alt="Cesta" width="25" height="15" style="margin-top: 3px;">
+        </a>
+    </div>
+</nav>
+
+<header>
+    <!-- <img src="imagenes/salma.png" alt="Saikoneta Image" style="max-width: 50%; margin-top: -80px;"> -->
+    <h2 class="elementor-heading-title elementor-size-default">Escucha mis temas en OT</h2>
+</header>
+
+<table class="default">
+    <tr>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/-qNw-oxuCtw" frameborder="0" allowfullscreen></iframe>
+        </td>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/o7batv_tRaw" frameborder="0" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/iHJcfPW0FMk" frameborder="0" allowfullscreen></iframe>
+        </td>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/LBIuVmX0mi8" frameborder="0" allowfullscreen></iframe>
+        </td>
+    </tr>
+    <tr>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/WZGYldwJWb4" frameborder="0" allowfullscreen></iframe>
+        </td>
+        <td class="video-container">
+            <iframe src="https://www.youtube.com/embed/DDiYp-G5nm4" frameborder="0" allowfullscreen></iframe>
+        </td>
+    </tr>
+</table>
